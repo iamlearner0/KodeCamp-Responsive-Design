@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color:#000;
+}
+
+section{
+    max-width: 100vw;
+}
+
+.future--images.desktop{
+    display: none;
+}
+
+.navbar {
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlinks li {
+    margin-left: 2rem;
+}
+
+.navlinks {
+    display: none;  
+}
+
+.hamburger {
+    width:1.3rem;
+}
+
+.section--one{
+    background: url(./Images/Mobile/Image.png) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    margin: 0;
+    padding-top: 1.2rem;
+}
+
+.title--container {
+    width: 95%;
+    border-radius: 0 2rem 2rem 0;
+    background-color: #fff;
+    color: #000;
+    padding: 1.5rem 2rem;
+}
+
+.title--container h1{
+    font-size: 2.2rem;
+    font-weight: bolder;
+}
+
+.title--container p{
+    margin-top: 1rem;
+    line-height: 1.4em;
+    font-weight: 400;
+}
+
+.section--two {
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+.future--container{
+    display: grid;
+}
+
+.future--images {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.future--text {
+    padding: 2.2rem 1.7rem;
+    background-color: #F2F0F2;
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+
+.future--text h2{
+    margin-bottom: 1rem;
+}
+
+.future--text p{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.center{
+    margin: 0 auto;
+}
+
+.feature--container,.corporate--container {
+    margin-top: 5rem;
+}
+
+.feature--title {
+    text-align: center;
+}
+
+.feature--title h2 {
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.feature--title p{
+    font-size: 0.9rem;
+    line-height: 1.3;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.sub--container {
+    margin: 0 auto;
+    background-color: #E2F1E8;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    margin-bottom: 1.3rem;
+    text-align:left;
+}
+
+.sub--container img {
+    width: 2rem;
+}
+
+.sub--container h3 {
+    margin: 1.5rem 0 0.6rem 0;
+}
+
+.sub--container p {
+    font-weight: 500;
+    font-size: 0.8rem;
+    line-height: 1.3;
+}
+
+@media screen and (min-width: 420px) {
+    .navbar{
+        padding: 1.5rem 3rem;
+    }
+    .navlinks {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+    } 
+    .navlinks li {
+        margin-left: 2rem;
+    }
+    .hamburger{
+        display: none;
+    }
+    .section--one{
+        background: url(./Images/Desktop/Image.png);
+        background-size: cover;
+        background-position: center;
+        padding-top: 5em;
+        height:40rem;
+    }
+    .title--container{
+        max-width: 20rem;
+    }
+    .future--container{
+        max-width: 70%;
+        grid-template-rows: 1fr 0.8fr;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+    .future--text {
+        border-radius: 0  0 1.5rem 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+    .future--text div{
+        text-align: center;
+        width: 70%;
+    }
+    .future--images img{
+        width: 12rem;
+    }
+    .future--text h2{
+        font-size: 2rem;
+    }
+    .future--text p{
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
+    .feature--title h2{
+        max-width: 50%;
+        margin:0 auto;
+        font-size: 1.8rem ;
+    }
+    .feature--title p{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+    }
+    .feature--sub{
+        width: 70%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0.5rem;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    .section--one{
+        padding-top: 7rem;
+    }
+    .title--container{
+        width: 30%;
+    }
+    .future--container{
+        width: 85%;
+        grid-template-columns: 1fr 1fr;
+    }
+    .future--images.desktop {
+        display: grid;
+    }
+    .future--images img{
+        width: 16rem;
+    }
+    .future--text {
+        border-radius: 0 2.5rem 2.5rem 0;
+    }
+    .future--text div{
+        max-width: 85%;
+    }
+    .future--text p{
+        font-size: 0.8rem;
+    }
+    .mobile{
+        display: none;
+    }
+    .feature--title h2{
+        max-width: 40%;
+    }
+    .feature--sub{
+        width: 85%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 1rem;
+    }
+}
