@@ -229,9 +229,13 @@ section{
     .title--container{
         width: 30%;
     }
+    .section--two {
+        margin-bottom: -5rem;
+    }
     .future--container{
         width: 85%;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
     .future--images.desktop {
         display: grid;
